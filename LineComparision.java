@@ -1,5 +1,5 @@
 package com.brdz.lineComparision;
-
+import java.lang.Double; 
 public class LineComparision {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparison Computation Program");
@@ -17,12 +17,16 @@ public class LineComparision {
 		double line1 = Math.sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)));
 		double line2 = Math.sqrt(((a2-a1)*(a2-a1))+((b2-b1)*(b2-b1)));
 		
-		if (line1 == line2) {
-			System.out.println("lines are equal");
-		}
-		else {
-			System.out.println("lines are not equal");
-		}
+//		if (line1 == line2) {
+//			System.out.println("lines are equal");
+//		}
+//		else {
+//			System.out.println("lines are not equal");
+//		}
+		double d1 = line1;
+		double d2 = line2;
+	    int compare=d1.compareTo(d2); 
+		System.out.println(compare);
 		
 	}
 	
